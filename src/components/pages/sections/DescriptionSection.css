@@ -1,0 +1,36 @@
+.description {
+    border-top: solid 1px #ececec;
+    border-bottom: solid 1px #ececec;
+}
+
+.icono-deatil {
+    font-size: 15px !important;
+    padding-top: 40px;
+}
+
+.divisor-desc {
+    border: 3px solid #E60012 !important;
+    opacity: 10 !important;
+    margin-top: -1px !important;
+    margin-bottom: -1px !important;
+}
+
+
+
+#icon-first {
+    background-color: #ececec;
+}
+
+#icon-second {
+    background-color: #000;
+}
+
+#icon-third {
+    background-color: #ececec;
+}
+
+#icon-fourty {
+    background-color: #000;
+}
+
+@media screen and (max-width: 960px) {}

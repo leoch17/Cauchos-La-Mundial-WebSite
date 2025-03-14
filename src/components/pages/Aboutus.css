@@ -1,0 +1,117 @@
+.general-about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #fff;
+}
+
+@media (max-width: 992px) {
+    .general-about {
+        padding: 20px;
+    }
+}
+
+.box {
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.box__item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    width: 190px;
+    padding: 50px;
+    border-radius: 5px;
+    box-shadow: -5px 5px 50px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.box__item:hover {
+    box-shadow: -10px 10px 100px rgba(0, 0, 0, 0.5);
+    transform: scale(1.1);
+}
+
+@media (max-width: 992px) {
+    .box__item {
+        margin-bottom: 50px;
+    }
+}
+
+.box__item .iconos {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.box__item span {
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.box__item--vue {
+    color: #F40A0F;
+}
+
+.box__item--vue:hover {
+    background: #D0D0CF;
+    color: #fff;
+}
+
+.box__item--vue:hover~.box__bg {
+    opacity: 1;
+    background-image: url(../../../public/images/acercade.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.box__item--react {
+    color: #F40A0F;
+}
+
+.box__item--react:hover {
+    background: #D0D0CF;
+    color: #fff;
+}
+
+.box__item--react:hover~.box__bg {
+    opacity: 1;
+    background-image: url(../../../public/images/acercade-2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.box__item--angular {
+    color: #F40A0F;
+}
+
+.box__item--angular:hover {
+    background: #D0D0CF;
+    color: #fff;
+}
+
+.box__item--angular:hover~.box__bg {
+    opacity: 1;
+    background-image: url(../../../public/images/empresa/acercade-3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.box__bg {
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    opacity: 0;
+    transition: all 0.5s;
+}
